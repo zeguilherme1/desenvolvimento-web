@@ -14,6 +14,7 @@ header {
     justify-content: flex-start;
     padding-left: 32px;
     align-items: center;
+    color: white;
 }
 header img{
     height: 100%;
@@ -37,15 +38,21 @@ header p{
 }
 
 .banner img {
-    position: fixed;
+    position: relative;
     display: flex;
     width: 100%;   
-    max-width: 980px;   
+    max-width: 980px;
 }
 
 
-
-
+.decor-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100vw; 
+    height: 40px;
+    background-color: #f64c1e;
+}
 
 
 
@@ -55,9 +62,10 @@ footer{
     bottom: 0;
     width: 100%;
     background-color: #F85618;
-    color: black;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
 }
 
