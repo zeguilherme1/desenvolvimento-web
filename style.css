@@ -20,6 +20,7 @@ header {
     padding-left: 32px;
     align-items: center;
     color: white;
+    z-index: 1000;
 }
 
 header img {
@@ -93,6 +94,11 @@ header p {
     font-size: 22px;
 }
 
+.decor-bar h3 {
+    color: white;
+    padding: 36px;
+}
+
 li a {
     display: block;
     padding: 10px;
@@ -117,9 +123,85 @@ footer {
     align-items: center;
     font-size: 18px;
     text-align: center;
+
+}
+
+.adoption-info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+    color: #1E005B;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.step-title h1 {
+    font-size: 36px;
+}
+
+.adoption-info h3 {
+    font-size: 24px;
+}
+
+.step {
+    width: 30%;
+    min-width: 220px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cat-grid-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    color:#DF3E0D;
+    margin: 40px 0 20px;  
+    background-color: #FFD970;
+    margin: 0;
+   
+}
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Revisar essa parte*/
+    gap: 20px;
+    padding-bottom: 5%; /* Lembrar de tirar isso depois*/
+    background-color: #FFD970;
+}
+
+.cat-card {
+    background-color: #FFE8A1;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cat-card img {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 40%;
+}
+
+.cat-card h4 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #1E005B;
+}
+
+.cat-card p {
+    font-size: 12px;
+    color: #333;
 }
 
 
+/* To basicamente copiando e colando o codigo que ja fiz no desktop pra tentar deixar responsivo no mobile
+usando a media query, será que isso tá certo mesmo? senhor amado*/
 @media (max-width: 768px) {
 
     header {
@@ -148,6 +230,7 @@ footer {
         justify-content: flex-start;
         padding-left: 16px;
         align-items: center;
+        text-align: center;
     }
 
     .banner {
@@ -193,6 +276,12 @@ footer {
 
     }
 
+    .decor-bar h3 {
+        color: white;
+        padding: 36px;
+        font-size: 8px;
+    }
+
     .decor-bar li {
         font-size: 12px;
         padding: 0 16px;
@@ -214,5 +303,70 @@ footer {
         align-items: center;
         font-size: 12px;
         text-align: center;
+    }
+
+    .adoption-info {
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px 0;
+        text-align: center;
+        color: #1E005B;
+    }
+
+    .steps {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }
+
+    .step h3 {
+        font-size: 14px;
+    }
+
+    .step-title h1 {
+        font-size: 22px;
+    }
+
+    .step {
+        width: 30%;
+        min-width: 220px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .cat-grid {
+        display: grid;
+        padding-bottom: 20%; /* Lembrar de tirar isso depois*/
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .cat-card {
+        background-color: #FFE8A1;
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .cat-card img {
+        width: 100%;
+        border-radius: 12px;
+        max-width: 80%;
+    }
+
+    .cat-card h4 {
+        margin: 10px 0 5px;
+        font-size: 16px;
+        color: #1E005B;
+    }
+
+    .cat-card p {
+        font-size: 12px;
+        color: #333;
+    }
+    .cat-grid-title {
+        font-size: 12px;
     }
 }
