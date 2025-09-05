@@ -138,7 +138,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    text-align: center;
 }
 
 .step-title h1 {
@@ -321,6 +321,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
         flex-wrap: wrap;
         margin-bottom: 40px;
         font-size: 12px;
+        text-align: center;
     }
 
     .step h3 {
@@ -334,7 +335,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     .step {
         width: 30%;
         min-width: 220px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         text-align: left;
     }
 
