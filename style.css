@@ -65,7 +65,7 @@ header p {
 }
 
 .banner-title p {
-    font-family: "Inter", sans-serif;
+    font-family: "Mochiy Pop One", sans-serif;
 }
 
 .decor-bar {
@@ -202,6 +202,8 @@ footer {
 
 /* To basicamente copiando e colando o codigo que ja fiz no desktop pra tentar deixar responsivo no mobile
 usando a media query, será que isso tá certo mesmo? senhor amado*/
+
+
 @media (max-width: 768px) {
 
     header {
@@ -244,10 +246,11 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     }
 
     .banner img {
-        width: 80%;
+        width: 100%;
         height: auto;
         max-width: none;
         object-fit: cover;
+        
     }
 
     .banner-title {
@@ -272,8 +275,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     }
 
     .decor-bar {
-        height: 30px;
-
+        height: 5%
     }
 
     .decor-bar h3 {
