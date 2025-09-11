@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mochiy+Pop+One&display=swap");
+
+body {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-style: normal;
+  background-color: #fff7dd;
+  margin: 0;
+  padding: 0;
+}
+
+.adoption-banner {
+  width: 100%;
+  height: auto;
+  min-height: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adoption-decor-bar {
+  background-color: #f85618;
+  width: 100%;
+  height: 20px;
+}
+
+.purple-adoption-decor-bar {
+  background-color: #51459d;
+  width: 100%;
+  height: 20px;
+}
+
+.contribute-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  color: #f85618;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-section h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.left-section button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+.left-section img{
+  border-radius: 18px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-section h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.right-section img{
+  border-radius: 18px;
+}
+
+.right-section button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
+#popup-history {
+  background-color: #aba3e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: 70%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 18px;
+  border-color: #1e005b;
+  color: #1e005b;
+  text-align: justify;
+}
+
+#popup-history h2 {
+  color: #1e005b;
+  text-align: center;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /*flex-direction: row;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.team img {
+  height: 80px;
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  grid-row: 1;
+  margin-left: 5vh;
+  border-radius: 100px;
+}
+
+.team h4 {
+  grid-row: 2;
+  text-align: center;
+  margin-left: 5vh;
+}
+
+#closePop-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 8%;
+  margin-top: 5%;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-size: medium;
+  background-color: #51459d;
+  color: white;
+  border-radius: 18px;
+  cursor: pointer;
+  border: none;
+}
+

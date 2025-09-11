@@ -14,7 +14,7 @@ header {
     left: 0;
     width: 100%;
     height: 6%;
-    background-color: #F85618;
+    background-color: #FA7D47;
     display: flex;
     justify-content: flex-start;
     padding-left: 32px;
@@ -273,27 +273,9 @@ footer {
     font-size: 28px;
 }
 
-.right-section button {
-    font-family: "Mochiy Pop One", sans-serif;
-    width: 100%;
-    font-size: 26px;
-    border-radius: 18px;
-    background-color: #1E005B;
-    color: white;
-}
-
 .left-section h2 {
     text-align: center;
     font-size: 28px;
-}
-
-.left-section button {
-    font-family: "Mochiy Pop One", sans-serif;
-    width: 100%;
-    font-size: 26px;
-    border-radius: 18px;
-    background-color: #1E005B;
-    color: white;
 }
 
 .adoption-form-container {

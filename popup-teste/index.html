@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop-ups</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="adoption-decor-bar"></div>
+
+    <div class="adoption-banner">
+      <img src="./assets/adocao.png" alt="Banner do site com 2 gatinhos" />
+    </div>
+
+    <div class="adoption-decor-bar"></div>
+
+    <div class="contribute-container">
+      <div class="left-section">
+        <h2>Contribua conosco!</h2>
+        <button id="openPop-donate" onclick="openDonate()">
+          <img src="./assets/doar.png" />
+        </button>
+        <button id="openPop-found" onclick="openWhatsapp()">
+          <img src="./assets/encontrei_gatinho.png" />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <h2>Outras informações</h2>
+        <button id="openPop-feira">
+          <img src="./assets/feira_adocao.png" />
+        </button>
+        <button id="openPop-history">
+          <img src="./assets/historia.png" />
+        </button>
+      </div>  
+    </div>
+
+    <dialog id="popup-history">
+      <h2>História do projeto</h2>
+      <p>
+        Fundado em 2021, o Projeto Lar Temporário é mantido com ajuda de
+        padrinhos fixos e doações esporádicas de seguidores.
+      </p>
+      <p>
+        Os gatos recebem os cuidados básicos de vermífugo, anti-pulgas,
+        vitamina, comem ração premium, sachês, passam a utilizar a caixa de
+        areia e são socializados. A depender da idade, recebem cuidados mais
+        completos: fazem exames, são vacinados e castrados.
+      </p>
+      <p>
+        Após cuidados básicos, eles são disponibilizados para adoções
+        responsáveis, concluindo o nosso propósito como abrigo temporário.
+      </p>
+      <h3>Equipe:</h3>
+      <div class="team">
+        <img src="./assets/gato_empresario.jpg" />
+        <h4>nome</h4>
+        <img src="./assets/gato_empresario.jpg" />
+        <h4>nome</h4>
+        <img src="./assets/gato_empresario.jpg" />
+        <h4>nome</h4>
+      </div>
+
+      <button id="closePop-history">Fechar</button>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
