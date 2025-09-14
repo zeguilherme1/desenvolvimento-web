@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Refrigerantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="title">
+        <h2>Selecione uma bebida</h2>
+        <p id="valor-bebida">Valor da bebida selecionada: R$ 0.00</p>
+        <p id="contador-moedas">Total inserido: R$ 0.00</p>
+        <p id="resultado-recebido" style="color:blue;"></p>
+        <p id="troco" style="color:blue;"></p>
+    </header>
+
+    <div id="bebidas-alert"></div>
+
+    <div id="moedas-container">
+        <img class="item" src="./assets/25cents.webp" draggable="true" alt="25 centavos" data-value="25cents">
+        <img class="item" src="./assets/50cents.png" draggable="true" alt="50 centavos" data-value="50cents">
+        <img class="item" src="./assets/1real.png" draggable="true" alt="1 real" data-value="1real">
+    </div>
+    <div id="main-container">
+
+        <div id="maquina-container">
+            <img src="./assets/maquina_cocacola.png" alt="Máquina de Refrigerantes">
+
+            <div id="lista-bebidas"></div>
+        </div>
+    </div>
+
+    <div id="selecionadas"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

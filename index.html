@@ -1,216 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/assets/kitty_logo.png">
-    <title>Projeto Lar Temporário</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Lar Temporário</title>
+  <link rel="icon" type="image/png" href="./assets/kitty_logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <!-- Tentaremos seguir HTML semântico -->
-    <header>
-        <a href="./index.html"><img src="./assets/kitty_logo.png" alt="Logo de um gatinho"></a>
-        <p>Projeto Lar Temporário</p>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <a href="./index.html">
+      <img src="./assets/kitty_logo.png" alt="Logo de um gatinho">
+    </a>
+    <p>Projeto Lar Temporário</p>
+  </header>
 
-    <div class="banner">
-        <img src="./assets/banner.png" alt="Banner do site com 2 gatinhos">
-        <div class="banner-title">
-            <h1>Encontre um novo amigo!</h1>
-            <p>Nosso projeto está cheio de gatinhos resgatados procurando por um lar.</p>
-            <p>Venha se tornar a família de algum deles!</p>
-        </div>
+  <!-- BANNER PRINCIPAL -->
+  <div class="banner">
+    <img src="./assets/banner.png" alt="Banner do site com 2 gatinhos">
+    <div class="banner-title">
+      <h1>Encontre um novo amigo!</h1>
+      <p>Nosso projeto está cheio de gatinhos resgatados procurando por um lar.</p>
+      <p>Venha se tornar a família de algum deles!</p>
+    </div>
+  </div>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="decor-bar">
+    <ul>
+      <h3>+130 gatinhos resgatados!</h3>
+      <h3>+110 adoções!</h3>
+      <h3>+150 auxílios!</h3>
+    </ul>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="adoption-info">
+    <div class="step-title">
+      <h1>Como funciona?</h1>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Formulário de interesse</h3>
+        <p>Depois de observar os bichinhos disponíveis para adoção, preencha nosso formulário de interesse com
+          informações verídicas!</p>
+      </div>
+      <div class="step">
+        <h3>Comprovação dos dados</h3>
+        <p>Caso você atenda aos critérios iniciais de adoção responsável, em até 48h entraremos em contato para
+          solicitar a comprovação das informações fornecidas.</p>
+      </div>
+      <div class="step">
+        <h3>Visita ao projeto</h3>
+        <p>Após todos os passos serem concluídos, agendaremos uma visita para buscar o gatinho adotado ou
+          conhecer outros.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LISTA DE GATINHOS -->
+  <div class="adoption-decor-bar"></div>
+  <div class="cat-grid-title">
+    <h1>Conheça os gatinhos disponíveis!</h1>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Tadinho da Silva</h4>
+      <p>Ele é tadinho.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Safadinho 69</h4>
+      <p>Autodescritivo.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Fofuxa</h4>
+      <p>A função dela é ser fofa.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Senhor Cabeça de Batata</h4>
+      <p>Ele gosta de batatas.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Jessie</h4>
+      <p>Ela é uma cowgirl.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Yuki</h4>
+      <p>O maior de todos.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Destruidor</h4>
+      <p>Ele bate o pézinho se você faz carinho.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Fujona</h4>
+      <p>Ela não para em casa.</p>
+    </div>
+    <div class="cat-card">
+      <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
+      <h4>Pinguim</h4>
+      <p>Ele não gosta do frio.</p>
+    </div>
+  </div>
+
+  <div class="see-more-container">
+    <button class="see-more-cats" onclick="window.location.href='./catalogo.html'">
+      Veja mais gatinhos
+      <i class="fa fa-paw"></i>
+    </button>
+  </div>
+
+  <!-- BANNER DE ADOÇÃO -->
+  <div class="adoption-decor-bar"></div>
+  <div class="adoption-banner">
+    <img src="./assets/adocao.png" alt="Banner do site com 2 gatinhos">
+  </div>
+  <div class="adoption-decor-bar"></div>
+
+  <!-- CONTRIBUIÇÃO + POPUPS -->
+  <div class="contribute-container">
+    <div class="left-section">
+      <h2>Contribua conosco!</h2>
+      <button id="openPop-donate" onclick="openDonate()">
+        <img src="./assets/doar.png" alt="Doar">
+      </button>
+      <button id="openPop-found" onclick="openWhatsapp()">
+        <img src="./assets/encontrei_gatinho.png" alt="Encontrei um gatinho">
+      </button>
     </div>
 
-    <section class="decor-bar">
-        <ul>
-            <h3>+130 gatinhos resgatados!</h3>
-            <h3>+110 adoções!</h3>
-            <h3>+150 auxílios!</h3>
-        </ul>
-    </section>
-
-    <section class="adoption-info">
-
-        <div class="step-title">
-            <h1>Como funciona?</h1>
-        </div>
-
-        <div class="steps">
-            <div class="step">
-                <h3>Formulário de interesse</h3>
-                <p>Depois de observar os bichinhos disponíveis para adoção, preencha nosso formulário de interesse com
-                    informações verídicas!</p>
-            </div>
-            <div class="step">
-                <h3>Comprovação dos dados</h3>
-                <p>Caso você atenda aos critérios iniciais de adoção responsável, em até 48h entraremos em contato para
-                    solicitar a comprovação das informações fornecidas.</p>
-            </div>
-            <div class="step">
-                <h3>Visita ao projeto</h3>
-                <p>Após todos os passos serem concluídos, agendaremos uma visita para buscar o gatinho adotado ou
-                    conhecer outros.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="adoption-decor-bar"></div>
-    <div class="cat-grid-title">
-        <h1>Conheça os gatinhos disponíveis!</h1>
+    <div class="right-section">
+      <h2>Outras informações</h2>
+      <button id="openPop-feira">
+        <img src="./assets/feira_adocao.png" alt="Feira de adoção">
+      </button>
+      <button id="openPop-history">
+        <img src="./assets/historia.png" alt="História do projeto">
+      </button>
     </div>
-    <div class="cat-grid">
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Tadinho da Silva</h4>
-            <p>Ele é tadinho.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Safadinho 69</h4>
-            <p>Autodescritivo.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Fofuxa</h4>
-            <p>A função dela é ser fofa.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Senhor Cabeça de Batata</h4>
-            <p>Ele gosta de batatas.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Jessie</h4>
-            <p>Ela é uma cowgirl.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Yuki</h4>
-            <p>O maior de todos.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Destruidor</h4>
-            <p>Ele bate o pézinho se você faz carinho.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Fujona</h4>
-            <p>Ela não para em casa.</p>
-        </div>
-        <div class="cat-card">
-            <img src="./assets/gato_sorrindo.jpg" alt="Gatinho">
-            <h4>Pinguim</h4>
-            <p>Ele não gosta do frio.</p>
-        </div>
+  </div>
+
+  <!-- POPUP HISTÓRIA -->
+  <dialog id="popup-history">
+    <h2>História do projeto</h2>
+    <p>
+      Fundado em 2021, o Projeto Lar Temporário é mantido com ajuda de padrinhos fixos e doações esporádicas de seguidores.
+    </p>
+    <p>
+      Os gatos recebem os cuidados básicos de vermífugo, anti-pulgas, vitamina, comem ração premium, sachês, passam a utilizar a caixa de areia e são socializados. 
+      A depender da idade, recebem cuidados mais completos: fazem exames, são vacinados e castrados.
+    </p>
+    <p>
+      Após cuidados básicos, eles são disponibilizados para adoções responsáveis, concluindo o nosso propósito como abrigo temporário.
+    </p>
+    <h3>Equipe:</h3>
+    <div class="team">
+      <img src="./assets/gato_empresario.jpg" alt="Integrante da equipe">
+      <h4>nome</h4>
+      <img src="./assets/gato_empresario.jpg" alt="Integrante da equipe">
+      <h4>nome</h4>
+      <img src="./assets/gato_empresario.jpg" alt="Integrante da equipe">
+      <h4>nome</h4>
     </div>
+    <button id="closePop-history">Fechar</button>
+  </dialog>
 
-    <div class="see-more-container">
-        <button class="see-more-cats" href="">
-            Veja mais gatinhos
-            <i class="fa fa-paw"></i>
-        </button>
+  <!-- FORMULÁRIO DE ADOÇÃO -->
+  <div class="purple-adoption-decor-bar"></div>
+  <div class="adoption-form-container">
+    <div class="adoption-form">
+      <div class="adoption-form-title">
+        <h2>Formulário de Interesse</h2>
+      </div>
+      <form>
+        <label for="name">Nome completo: </label>
+        <input type="text" id="name">
+
+        <label for="telefone">Telefone (DDD + Número):</label>
+        <input type="tel" id="telefone">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+
+        <label for="address">Endereço completo: </label>
+        <input type="text" id="address">
+
+        <label for="do-have-cats">Você já teve gato(s)? </label>
+        <select id="do-have-cats">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="have-cats">Se tem gatos ou outros animais, descreva quantos são, quais sexos e idades.</label>
+        <input type="text" id="have-cats">
+
+        <label for="vacina">Se tem gatos, eles são vacinados?</label>
+        <select id="vacina">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="castrados">Se tem gatos, eles são castrados?</label>
+        <select id="castrados">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="cidade">Você mora em: </label>
+        <input type="text" id="cidade">
+
+        <label for="apartamento">Se mora em apartamento, há redes de proteção em todas as janelas?</label>
+        <select id="apartamento">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="casa">Se mora em casa, possui estrutura para evitar fugas?</label>
+        <select id="casa">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="experiencia">Você tem experiência com a adaptação de felinos?</label>
+        <select id="experiencia">
+          <option>Sim</option>
+          <option>Não</option>
+        </select>
+
+        <label for="gatinhos-interesse">Qual é ou quais são os nomes dos gatinhos que você gostaria de adotar?</label>
+        <input type="text" id="gatinhos-interesse">
+
+        <button class="submit-form" type="submit">Enviar</button>
+      </form>
     </div>
+  </div>
 
-    <div class="adoption-decor-bar">
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Projeto Lar Temporário - Não temos o direito de nada</p>
+  </footer>
 
-    </div>
-    <div class="adoption-banner">
-        <img src="./assets/adocao.png" alt="Banner do site com 2 gatinhos">
-    </div>
-
-    <div class="adoption-decor-bar"></div>
-
-    <div class="contribute-container">
-        <div class="left-section">
-            <h2>Contribua conosco!</h2>
-            <img src="./assets/doar.png">
-            <button>Doar</button>
-            <img src="./assets/encontrei_gatinho.png">
-            <button>Encontrei um gatinho</button>
-        </div>
-
-        <div class="right-section">
-            <h2>Outras informações</h2>
-            <img src="./assets/feira_adocao.png">
-            <button>Feiras de adoções</button>
-            <img src="./assets/historia.png">
-            <button>Sobre o projeto</button>
-        </div>
-    </div>
-    
-    <div class="purple-adoption-decor-bar"></div>
-
-    <div class="adoption-form-container">
-
-        <div class="adoption-form">
-            <div class="adoption-form-title">
-                <h2>Formulário de Interesse</h2>
-            </div>
-
-            <form>
-                <label for="name">Nome completo: </label>
-                <input type="text" id="name">
-
-                <label for="telefone">Telefone (DDD + Número):</label>
-                <input type="tel" id="telefone">
-
-                <label for="email">E-mail:<label>
-                <input type="email" id="email">
-                <label for="address">Endereço completo: </label>
-                <input type="text" id="address">
-
-                <label for="do-have-cats">Você já teve gato(s)? </label>
-                <input type="" id="do-have-cats"> <!--- Lembrar de trocar isso depois, ver como fazer input yes or no dropdown etc-->
-
-                <label for="have-cats">Se tem gatos ou outros animais, descreva quantos são, quais sexos e idades.</label>
-                <input type="text" id="have-cats">
-
-                <label for="vacina">Se tem gatos, eles são vacinados?</label>
-                <input type="" id="vacina">
-
-                <label for="castrados">Se tem gatos, eles são castrados?</label>
-                <input type="" id="castrados">
-
-                <label for="cidade">Você mora em: </label>
-                <input type="" id="cidade">
-
-                <label for="apartamento">Se mora em apartamento, há redes de proteção em todas as janelas?</label>
-                <input type="" id="apartamento">
-
-                <label for="casa">Se mora em casa, possui estrutura para evitar fugas?<label>
-                <input type="" id="casa">
-
-                 <label for="experiencia">Você tem experiência com a adaptação de felinos?<label>
-                <input type="" id="experiencia">
-
-                <label for="ciencia">Você tem experiência com a adaptação de felinos?<label>
-                <input type="" id="ciencia">
-
-                <label for="gatinhos-interesse">Qual é ou quais são os nomes dos gatinhos que você gostaria de adotar? <label>
-                <input type="" id="gatinhos-interesse">
-
-                <button class="submit-form" type="submit">
-                    Enviar
-                </button>
-                
-            </form>
-        </div>
-    </div>
-
-
-
-
-
-    <footer>
-        <p>© 2025 Projeto Lar Temporário - Não temos o direito de nada</p>
-    </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
