@@ -19,6 +19,10 @@ body {
   justify-content: center;
 }
 
+.adoption-banner img {
+    max-width: 100%;
+}
+
 .adoption-decor-bar {
   background-color: #f85618;
   width: 100%;
@@ -160,7 +164,7 @@ header {
     left: 0;
     width: 100%;
     height: 6%;
-    background-color: #FA7D47;
+    background-color: #f85618;
     display: flex;
     justify-content: flex-start;
     padding-left: 32px;
@@ -298,7 +302,7 @@ footer {
 .step {
     width: 30%;
     min-width: 220px;
-    margin-bottom: 20px;
+    margin: 0px 12px 20px 12px;
     text-align: left;
 }
 
@@ -486,7 +490,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
         left: 0;
         width: 100%;
         height: 5%;
-        background-color: #F85618;
+        background-color: #f85618;
         display: flex;
         justify-content: flex-start;
         padding-left: 32px;
@@ -609,7 +613,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     .step {
         width: 30%;
         min-width: 220px;
-        margin-bottom: 0px;
+        margin: 0px 10px 0px 10px;
         text-align: left;
     }
 
