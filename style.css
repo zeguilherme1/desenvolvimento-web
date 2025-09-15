@@ -45,6 +45,12 @@ body {
   color: #f85618;
 }
 
+.contribute-container button {
+  border: 0;
+  cursor: pointer;
+  border-radius: 18px;
+}
+
 .left-section {
   display: flex;
   flex-direction: column;
@@ -55,12 +61,6 @@ body {
 .left-section h2 {
   text-align: center;
   font-size: 28px;
-}
-
-.left-section button {
-  border: 0;
-  cursor: pointer;
-  border-radius: 18px;
 }
 
 .left-section img{
@@ -80,12 +80,6 @@ body {
 }
 
 .right-section img{
-  border-radius: 18px;
-}
-
-.right-section button {
-  border: 0;
-  cursor: pointer;
   border-radius: 18px;
 }
 
@@ -149,14 +143,6 @@ body {
   border: none;
 }
 
-
-body {
-    font-family: "Mochiy Pop One", sans-serif;
-    font-style: normal;
-    background-color: #FFF7DD;
-    margin: 0;
-    padding: 0;
-}
 
 header {
     position: fixed;
@@ -312,7 +298,6 @@ footer {
     justify-content: center;
     font-size: 18px;
     color: #DF3E0D;
-    margin: 40px 0 20px;
     background-color: #FFD970;
     margin: 0;
 
@@ -323,7 +308,7 @@ footer {
     grid-template-columns: repeat(3, auto);
     gap: 20px;
     justify-content: center;
-    text-align: center;
+    text-align: center; /* Não há necessidade desse atributo (por enquanto) */
     background-color: #FFD970;
 }
 
@@ -371,69 +356,12 @@ footer {
     border: none;
 }
 
-.adoption-banner {
-    width: 100%;
-    height: auto;
-    min-height: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.adoption-decor-bar {
-    background-color: #F85618;
-    width: 100%;
-    height: 20px;
-}
-
-.purple-adoption-decor-bar {
-    background-color: #51459D;
-    width: 100%;
-    height: 20px;
-}
-
-
-.contribute-container {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-    color: #F85618;
-}
-
-.left-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.right-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.right-section h2 {
-    text-align: center;
-    font-size: 28px;
-}
-
-.left-section h2 {
-    text-align: center;
-    font-size: 28px;
-}
 
 .adoption-form-container {
     background-color: #8377D1;
     display: flex;
     justify-content: center;
-    padding: 40px 0;
-    padding-bottom: 10%;
+    padding: 40px 0px 10% 0px;
 }
 
 .adoption-form {
@@ -528,7 +456,6 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
         height: auto;
         max-width: none;
         object-fit: cover;
-
     }
 
     .banner-title {
