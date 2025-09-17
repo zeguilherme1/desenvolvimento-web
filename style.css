@@ -148,7 +148,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 6%;
     background-color: #f85618;
     display: flex;
@@ -168,7 +168,7 @@ header p {
     font-size: 24px;
     display: flex;
     justify-content: flex-start;
-    padding-left: 15px;
+    margin-left: 16px;
     align-items: center;
 }
 
@@ -214,25 +214,25 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 .decor-bar ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-grow: 1;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .decor-bar li {
-    color: white;
-    padding: 0 42px;
-    font-size: 22px;
+    margin: 0px 2vw;
 }
 
 .decor-bar h3 {
-    color: white;
-    padding: 36px;
+    margin: 0px;
 }
 
 li a {
@@ -288,7 +288,7 @@ footer {
 .step {
     width: 30%;
     min-width: 220px;
-    margin: 0px 12px 20px 12px;
+    margin: 0px 14px 20px 14px;
     text-align: left;
 }
 
@@ -421,7 +421,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
         background-color: #f85618;
         display: flex;
         justify-content: flex-start;
-        padding-left: 32px;
+        padding-left: 15px;
         align-items: center;
         color: white;
     }
@@ -429,14 +429,13 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     header img {
         height: 100%;
         max-height: 40px;
-        padding-left: 28px;
     }
 
     header p {
         font-size: 16px;
         display: flex;
         justify-content: flex-start;
-        padding-left: 16px;
+        margin-left: 16px;
         align-items: center;
         text-align: center;
     }
@@ -485,13 +484,13 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
 
     .decor-bar h3 {
         color: white;
-        padding: 36px;
         font-size: 8px;
+        margin: 0px;
     }
 
     .decor-bar li {
         font-size: 12px;
-        padding: 0 16px;
+        /*padding: 0px 16px 0px 16px;*/
     }
 
     li a {
