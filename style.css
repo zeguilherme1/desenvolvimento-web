@@ -149,7 +149,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6%;
+    height: 5vh;
     background-color: #f85618;
     display: flex;
     justify-content: flex-start;
@@ -168,20 +168,21 @@ header p {
     font-size: 24px;
     display: flex;
     justify-content: flex-start;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
     align-items: center;
 }
 
 .banner {
     width: 100%;
-    height: 300px;
-    margin-top: 80px;
+    min-height: 24vmax;
+    margin-top: 5vh;
     position: relative;
 }
 
 .banner img {
     width: auto;
-    height: 100%;
+    height: 24vmax;
+
     max-width: none;
     object-fit: cover;
     position: absolute;
@@ -193,10 +194,9 @@ header p {
     color: #1E005B;
     position: absolute;
     left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
+    bottom: 5%;
     font-size: 22px;
-    max-width: 40%;
+    max-width: 40%; /* Solução: adicionar outro nível de escala */
     line-height: 1.3;
 }
 
@@ -205,9 +205,6 @@ header p {
 }
 
 .decor-bar {
-    position: absolute;
-    left: 0;
-    right: 0;
     width: 100%;
     height: 60px;
     background-color: #51459D;
@@ -259,13 +256,16 @@ footer {
     align-items: center;
     font-size: 18px;
     text-align: center;
+    padding: 16px 0px;
+}
 
+footer p {
+    margin: 0px;
 }
 
 .adoption-info {
     width: 90%;
-    margin: 0 auto;
-    padding: 80px 0;
+    margin: 20px auto;
     text-align: center;
     color: #1E005B;
 }
@@ -403,7 +403,6 @@ footer {
     font-weight: bold;
     border-radius: 12px;
     color: white;
-    border-width: 20%;
 }
 
 /* To basicamente copiando e colando o codigo que ja fiz no desktop pra tentar deixar responsivo no mobile
@@ -442,27 +441,29 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
 
     .banner {
         width: 100%;
-        height: auto;
-        margin-top: 80px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+        min-height: 28vmin;
+        margin-top: 5vh;
         position: relative;
     }
 
     .banner img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 28vmin;
         max-width: none;
+        min-height: 0px;
+
         object-fit: cover;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
 
     .banner-title {
         color: #1E005B;
         position: absolute;
         left: 10%;
-        top: 40%;
-        transform: translateY(-50%);
+        bottom: 50%;
+        transform: translateY(50%);
         font-size: 12px;
         max-width: 40%;
 
@@ -513,8 +514,7 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
 
     .adoption-info {
         width: 100%;
-        margin: 0 auto;
-        padding: 40px 0;
+        margin: 40px auto 40px auto;
         text-align: center;
         color: #1E005B;
     }
@@ -523,7 +523,6 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-bottom: 40px;
         font-size: 12px;
         text-align: center;
     }
@@ -621,7 +620,12 @@ usando a media query, será que isso tá certo mesmo? senhor amado*/
     .adoption-banner img {
         width: 100%;
     }
-    .contribute-container img {
+
+    .contribute-container button {
         width: 80%;
+    }
+
+    .contribute-container img {
+        width: 100%;
     }
 }
